@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-	BottomNavigation,
+	BottomNavigation, Button,
 	Grid,
 	IconButton,
-	Link,
+	Link, Stack,
 	Toolbar,
 	Typography
 } from "@mui/material";
@@ -11,6 +11,7 @@ import { cn } from "@bem-react/classname";
 import './Footer.scss'
 import TelegramIcon from '../TelegramIcon/TelegramIcon'
 import WhatsAppIcon from "../WhatsAppIcon/WhatsAppIcon";
+import Logo from "../Logo/Logo";
 
 
 
@@ -20,16 +21,33 @@ const Footer = () => {
 	return (
 		<BottomNavigation className={footerCN('Wrapper')} component={'footer'}>
 			<Toolbar className={footerCN()}>
-				<Grid container sx={{width: '100%'}} justifyContent="space-between">
+				<Grid container
+					  sx={{width: '100%'}}
+					  justifyContent="space-between">
 					<Grid item>
+						<Stack sx={{
+                            justifyContent: 'start',
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                            width: '100%'
+
+                        }}>
+                            <Logo width={'50px'} height={'50px'}/>
+                            <Typography className={footerCN('Title')}
+                                        component="h1"
+                                        sx={{fontSize: '30px'}}
+                            >
+                                Assistance
+                            </Typography>
+                        </Stack>
 						<Typography variant="body1" color="inherit">
-							<span style={{ fontWeight: 'bold' }}>Телефон:</span> +7(978) 732-26-67
+							<span style={{ fontWeight: 'bold' }}>Телефон:</span> +7 978 775 7022
 						</Typography>
 						<Typography variant="body1" color="inherit">
-							<span style={{ fontWeight: 'bold' }}>Электронная почта:</span> maydaynatalia@ya.ru
+							<span style={{ fontWeight: 'bold' }}>Электронная почта:</span> Электронная почта
 						</Typography>
 						<Typography variant="body1" color="inherit">
-							<span style={{ fontWeight: 'bold' }}>Адрес:</span> Россия, Республика Крым, пгт. Черноморское, ул. Первомайская 7
+							<span style={{ fontWeight: 'bold' }}>Адрес:</span> Россия, Республика Крым, пгт. Черноморское, Адрес
 						</Typography>
 					</Grid>
 					<Grid item>
@@ -43,6 +61,7 @@ const Footer = () => {
 								<TelegramIcon height={'40px'} width={'40px'}/>
 							</IconButton>
 						</Link>
+						<Button className={footerCN('Button')} variant="contained">Заказать звонок</Button>
 					</Grid>
 				</Grid>
 			</Toolbar>

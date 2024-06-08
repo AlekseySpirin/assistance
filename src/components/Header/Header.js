@@ -36,26 +36,53 @@ const Header = () => {
     const handleBurgerClick = () => {
         setBurgerOpen(!burgerOpen);
     };
+
+    const handleClickScrollToPrivilege = () => {
+        const element = document.getElementById('privilege');
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+    const handleClickScrollToProducts = () => {
+        const element = document.getElementById('products');
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+    const handleClickScrollToTransformResults = () => {
+        const element = document.getElementById('transform-results');
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+    const handleClickScrollToUsefulFact = () => {
+        const element = document.getElementById('useful-fact');
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+
+
     const sections = [
         {
             label: 'Преимущества',
             // icon: <HomeIcon/>,
-            // onClick: handleMainRouteClick,
+            onClick: handleClickScrollToPrivilege,
         },
         {
             label: 'Продукты',
             // icon: <KingBedIcon/>,
-            // onClick: handlePriceRouteClick,
+            onClick: handleClickScrollToProducts,
         },
         {
             label: 'Результаты трансформации',
             // icon: <CollectionsIcon/>,
-            // onClick: handleGalleryRouteClick,
+            onClick: handleClickScrollToTransformResults,
         },
         {
             label: 'Полезный факт',
             // icon: <ContactPageIcon/>,
-            // onClick: handleContactsRouteClick,
+            onClick: handleClickScrollToUsefulFact,
         },
     ];
 

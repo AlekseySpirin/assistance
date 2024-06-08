@@ -19,6 +19,7 @@ import ForwardIcon from '@mui/icons-material/Forward';
 import ProductCard from "../ProductCard/ProductCard";
 import {ExpandMore} from "@mui/icons-material";
 import {styled} from "@mui/material/styles";
+import Footer from "../Footer/Footer";
 
 
 
@@ -69,7 +70,7 @@ const Main = () => {
                 </Typography>
             </Box>
 
-            <Box className={mainCN('Wrapper')}>
+            <Box className={mainCN('Wrapper')} id={'privilege'}>
                 <Typography className={mainCN('Title')}
                             component="h2"
                 >
@@ -223,7 +224,7 @@ const Main = () => {
                 {/*</Box>*/}
 
             </Box>
-            <Box className={mainCN('Wrapper')}>
+            <Box className={mainCN('Wrapper')} id={'products'}>
                 <Typography className={mainCN('Title')}
                             component="h2"
                 >
@@ -252,7 +253,7 @@ const Main = () => {
                     </ProductCard>
                 </Grid>
             </Box>
-            <Box className={mainCN('Wrapper')}>
+            <Box className={mainCN('Wrapper')} id={'transform-results'}>
                 <Typography className={mainCN('Title')}
                             component="h2"
                 >
@@ -297,7 +298,7 @@ const Main = () => {
                     </ProductCard>
                 </Grid>
             </Box>
-            <Box className={mainCN('Wrapper')}>
+            <Box className={mainCN('Wrapper')} id={'useful-fact'}>
                 <Card sx={{
                     background: 'none',
                     boxShadow: 'none',
@@ -420,7 +421,6 @@ const Main = () => {
                 лишних операционных движений.
             </Typography>
             <CustomizedAccordions/>
-
         </main>
     )
 };
