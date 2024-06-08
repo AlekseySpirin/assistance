@@ -1,0 +1,69 @@
+.Toolbar {
+  max-width: 1200px;
+}
+.Toolbar.MuiToolbar-root {
+  padding: 0;
+  height: 6vh;
+  width: 100%;
+  max-width: 1200px;
+}
+.Toolbar-Info {
+  margin: 20px 20px 0 20px;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+}
+.Toolbar-Info.MuiStack-root {
+  flex-direction: row;
+}
+.Toolbar-Wrapper.MuiAppBar-root {
+  position: relative;
+  align-items: center;
+}
+.Toolbar-Title.MuiTypography-root {
+  padding-left: 20px;
+  font-style: italic;
+  max-width: 310px;
+  font-family: cursive;
+  font-size: clamp(25px, 5vw, 45px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.Toolbar-Subtitle.MuiTypography-root {
+  font-style: italic;
+  max-width: 250px;
+  font-size: clamp(15px, 5vw, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.Toolbar-Item {
+  border-radius: 10px;
+  transition: opacity ease 0.2s, background-color ease 0.2s;
+}
+.Toolbar-Item.MuiTypography-root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Toolbar-Item_active {
+  opacity: 0.8;
+  background-color: #1565c0;
+}
+.Toolbar-Item:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: #1565c0;
+}
+
+@media (max-width: 768px) {
+  .Toolbar.MuiToolbar-root {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

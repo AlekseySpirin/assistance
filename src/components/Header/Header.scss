@@ -1,0 +1,127 @@
+.Toolbar {
+  max-width: 1200px;
+
+  &.MuiToolbar-root {
+    padding: 0;
+    height: 6vh;
+    width: 100%;
+    max-width: 1200px;
+
+  }
+
+  &-Button {
+
+    &.MuiButton-root {
+      margin-left: clamp(10px, 4vw, 30px);
+      margin-right: clamp(10px, 4vw, 30px);
+      background-color: #154B52;
+      transition: opacity ease .2s, background-color ease .2s;
+    }
+
+
+  }
+
+  &-Button:hover {
+    &.MuiButton-root {
+      cursor: pointer;
+      opacity: 0.5;
+      background-color: #154B52;
+    }
+
+  }
+
+  &-Info {
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+
+    &.MuiStack-root {
+      flex-direction: row;
+    }
+
+  }
+
+  &-Wrapper {
+    &.MuiAppBar-root {
+      position: relative;
+      align-items: center;
+      background-color: #1C8394;
+    }
+  }
+
+  //
+  //&-Icon {
+  //  &.MuiIconButton-root {
+  //    display: none;
+  //  }
+  //
+  //}
+
+  &-Title {
+    &.MuiTypography-root {
+      padding-left: 20px;
+      font-style: italic;
+      max-width: 310px;
+      font-family: cursive;
+      //font-size: 48px;
+      font-size: clamp(25px, 5vw, 45px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+  }
+
+  &-Subtitle {
+    &.MuiTypography-root {
+      padding-left: clamp(10px, 4vw, 30px);
+      padding-right: clamp(10px, 4vw, 30px);
+      font-style: italic;
+      max-width: 170px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+  }
+
+  &-Item {
+    border-radius: 10px;
+    transition: opacity ease .2s, background-color ease .2s;
+
+    &.MuiTypography-root {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
+    //&_active {
+    //  opacity: 0.8;
+    //  background-color: #1565c0;
+    //}
+
+  }
+
+
+  &-Item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #154B52;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .Toolbar {
+    &.MuiToolbar-root {
+      width: 100%;
+    }
+  }
+}

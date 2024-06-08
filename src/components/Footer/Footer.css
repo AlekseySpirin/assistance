@@ -1,0 +1,19 @@
+.Footer {
+  max-width: 1200px;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.Footer.MuiToolbar-root {
+  width: 100%;
+}
+.Footer-Wrapper {
+  width: 100%;
+}
+.Footer-Wrapper.MuiBottomNavigation-root {
+  width: 100%;
+  position: relative;
+  background-color: #2580DB;
+  height: auto;
+}
+
+/*# sourceMappingURL=Footer.css.map */
