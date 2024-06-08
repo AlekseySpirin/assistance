@@ -1,0 +1,27 @@
+.Accordion {
+  border-radius: 15px;
+
+  &.MuiAccordion-root {
+    background: #1C8394;
+    color: #FFFFFF;
+  }
+  &-AccordionSummary {
+    & .MuiSvgIcon-root {
+    color: #FFFFFF;
+  }
+
+  }
+
+  &-AccordionListWrapper {
+    margin-top: 20px;
+    //margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    //background-color: rgba(240, 255, 255, 0.9);
+    border-radius: 10px;
+  }
+
+  &.MuiAccordionSummary-expandIconWrapper {
+    //color: white;
+  }
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import {CardActionArea, CardContent, Typography, Card, Grid} from "@mui/material";
 import {cn} from "@bem-react/classname";
-import './MyCard.scss'
+import './ProductCard.scss'
 
-const MyCard = ({title, children, xs, sm, md}) => {
+const ProductCard = ({title, children, price, xs, sm, md}) => {
 
-    const cardCN = cn('Card');
+    const cardCN = cn('ProductCard');
     return (
         <Grid className={cardCN('Wrapper')} item sx xs={xs} sm={sm} md={md}>
             <Card className={cardCN()}>
@@ -22,6 +22,11 @@ const MyCard = ({title, children, xs, sm, md}) => {
                     >
                         {children}
                     </Typography>
+                    <Typography className={cardCN('Price')}
+                                component={'p'}
+                    >
+                        {price}
+                    </Typography>
                 </CardContent>
                 {/*</CardActionArea>*/}
             </Card>
@@ -29,4 +34,4 @@ const MyCard = ({title, children, xs, sm, md}) => {
     );
 };
 
-export default MyCard;
+export default ProductCard;
