@@ -102,29 +102,46 @@ const Header = () => {
                         <Typography className={toolbar('Title')}
                                     component="h1"
                         >
-                            Assistance
+                            UliEffectPlus
                         </Typography>
                     </Stack>
+                    <Stack sx={{
+                        justifyContent: 'center',
+                        textAlign: 'center',
+                        alignItems: 'center',
+                        maxWidth: '300px',
+                        flexDirection: 'row',
+
+                    }}>
+                        <Typography className={toolbar('Description')}
+                                    component="h5"
+                        >
+                            Трансформируем бизнес-процессы, повышаем производительность и сокращаем издержки в бизнесе
+                        </Typography>
+                    </Stack>
+
                     <Stack flexDirection={'row'} alignItems={'center'} justifyContent={'space-between'}
-                           maxWidth={'570px'}>
+                           maxWidth={'800px'}>
                         <Typography className={toolbar('Subtitle')}
                                     component="h2"
+                                    flexDirection={"column"}
                         >
-                            Консультация: +7 978 775 7022
+                            <span>Консультация:</span>
+                            <span style={{display: 'block'}}>+7(918)2921781</span>
                         </Typography>
-                        <Link target={'_blank'} href="https://wa.me/79787757022"
+                        <Link target={'_blank'} href="https://wa.me/79182921781"
                               color="inherit">
                             <IconButton color="inherit">
                                 <WhatsAppIcon height={'40px'} width={'40px'}/>
                             </IconButton>
                         </Link>
-                        <Link target={'_blank'} href="https://t.me/mojit1"
+                        <Link target={'_blank'} href="https://t.me/UliEffect"
                               color="inherit">
                             <IconButton color="inherit">
                                 <TelegramIcon height={'40px'} width={'40px'}/>
                             </IconButton>
                         </Link>
-                        <Button className={toolbar('Button')} variant="contained">Заказать звонок</Button>
+                        {/*<Button className={toolbar('Button')} variant="contained">Заказать звонок</Button>*/}
                     </Stack>
 
                 </Stack>}
@@ -153,7 +170,7 @@ const Header = () => {
                                         component="h1"
                                         sx={{fontSize: '30px'}}
                             >
-                                Assistance
+                                UliEffectPlus
                             </Typography>
                         </Stack>
                     </Stack>

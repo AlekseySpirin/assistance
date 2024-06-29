@@ -10,6 +10,7 @@
 
   &-Wrapper {
     width: 100%;
+
     &.MuiBottomNavigation-root {
       width: 100%;
       position: relative;
@@ -17,6 +18,7 @@
       height: auto;
     }
   }
+
   &-Button {
 
     &.MuiButton-root {
@@ -28,6 +30,7 @@
 
 
   }
+
   &-Title {
     &.MuiTypography-root {
       padding-left: 20px;
@@ -35,13 +38,14 @@
       max-width: 310px;
       font-family: cursive;
       //font-size: 48px;
-      font-size: clamp(25px, 5vw, 45px);
+      font-size: clamp(20px, 2vw, 45px);
       display: flex;
       justify-content: start;
       align-items: start;
       flex-grow: 1;
     }
   }
+
 
   &-Button:hover {
     &.MuiButton-root {
@@ -50,5 +54,13 @@
       background-color: #154B52;
     }
 
+  }
+}
+
+@media (max-width: 500px) {
+  .Footer {
+    &-Description {
+    display: none;
+    }
   }
 }

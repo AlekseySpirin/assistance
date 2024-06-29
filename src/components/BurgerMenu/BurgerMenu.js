@@ -66,10 +66,9 @@ const BurgerMenu = ({ sections, open, onClose }) => {
 							<StyledListItemButton
 								className={burgerMenuCN('Button')}
 								selected={selectedIndex === index}
-								// onClick={() => {
-								// 	section.onClick();
-								// 	handleListItemClick(index);
-								// }}
+								onClick={() => {
+									section.onClick();
+								}}
 							>
 								<ListItemIcon>{section.icon}</ListItemIcon>
 								<ListItemText primary={section.label} />
@@ -77,12 +76,12 @@ const BurgerMenu = ({ sections, open, onClose }) => {
 						</ListItem>
 					))}
 					<Stack flexDirection={'row'} justifyContent={'center'} alignItems={'center'}>
-						<Link target={'_blank'} href="https://wa.me/79787757022" color="inherit">
+						<Link target={'_blank'} href="https://wa.me/79182921781" color="inherit">
 							<IconButton color="inherit">
 								<WhatsAppIcon height={'40px'} width={'40px'} />
 							</IconButton>
 						</Link>
-						<Link target={'_blank'} href="https://t.me/mojit1" color="inherit">
+						<Link target={'_blank'} href="https://t.me/UliEffect" color="inherit">
 							<IconButton color="inherit">
 								<TelegramIcon height={'40px'} width={'40px'} />
 							</IconButton>

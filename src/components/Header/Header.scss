@@ -50,7 +50,7 @@
     }
   }
 
-  //
+
   //&-Icon {
   //  &.MuiIconButton-root {
   //    display: none;
@@ -65,7 +65,7 @@
       max-width: 310px;
       font-family: cursive;
       //font-size: 48px;
-      font-size: clamp(25px, 5vw, 45px);
+      font-size: clamp(25px, 3vw, 45px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,17 +75,23 @@
 
   &-Subtitle {
     &.MuiTypography-root {
-      padding-left: clamp(10px, 4vw, 30px);
-      padding-right: clamp(10px, 4vw, 30px);
+      padding-left: clamp(20px, 2vw, 30px);
+      padding-right: clamp(20px, 2vw, 30px);
       font-style: italic;
-      max-width: 170px;
-      font-size: 20px;
+      max-width: 200px;
+      min-width: 200px;
+
+      font-size: clamp(18px, 2vw, 26px);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-grow: 1;
     }
   }
+
+  //&-Description {
+  //
+  //}
 
   &-Item {
     border-radius: 10px;
@@ -117,6 +123,15 @@
 
 }
 
+
+@media (max-width: 1200px) {
+  .Toolbar {
+    &-Description {
+      display: none;
+    }
+  }
+
+}
 
 @media (max-width: 768px) {
   .Toolbar {
