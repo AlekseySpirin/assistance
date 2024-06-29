@@ -57,7 +57,7 @@ const Footer = () => {
                         justifyContent: 'center',
                         textAlign: 'center',
                         alignItems: 'center',
-                        maxWidth: '500px',
+                        maxWidth: '400px',
                         flexDirection: 'row',
 
 

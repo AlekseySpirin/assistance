@@ -109,12 +109,13 @@ const Header = () => {
                         justifyContent: 'center',
                         textAlign: 'center',
                         alignItems: 'center',
-                        maxWidth: '300px',
+                        maxWidth: '550px',
                         flexDirection: 'row',
+                        padding: '0 50px'
 
                     }}>
                         <Typography className={toolbar('Description')}
-                                    component="h5"
+                                    component="h4"
                         >
                             Трансформируем бизнес-процессы, повышаем производительность и сокращаем издержки в бизнесе
                         </Typography>

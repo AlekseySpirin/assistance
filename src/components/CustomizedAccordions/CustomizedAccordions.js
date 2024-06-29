@@ -126,43 +126,43 @@ export default function CustomizedAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion className={accordionCN()} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-                <AccordionSummary className={accordionCN('AccordionSummary')} aria-controls="panel1d-content"
-                                  id="panel1d-header">
-                    <Typography>Часто задаваемые вопросы №5</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый
-                        вопрос.
-                        Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый
-                        вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто
-                        задаваемый вопрос.Ответ на часто задаваемый вопрос.
+            {/*<Accordion className={accordionCN()} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>*/}
+            {/*    <AccordionSummary className={accordionCN('AccordionSummary')} aria-controls="panel1d-content"*/}
+            {/*                      id="panel1d-header">*/}
+            {/*        <Typography>Часто задаваемые вопросы №5</Typography>*/}
+            {/*    </AccordionSummary>*/}
+            {/*    <AccordionDetails>*/}
+            {/*        <Typography>*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый*/}
+            {/*            вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый*/}
+            {/*            вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто*/}
+            {/*            задаваемый вопрос.Ответ на часто задаваемый вопрос.*/}
 
 
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion className={accordionCN()} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
-                <AccordionSummary className={accordionCN('AccordionSummary')} aria-controls="panel1d-content"
-                                  id="panel1d-header">
-                    <Typography>Часто задаваемые вопросы №6</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.
-                        Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый
-                        вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто
-                        задаваемый вопрос.Ответ на часто задаваемый вопрос.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
+            {/*        </Typography>*/}
+            {/*    </AccordionDetails>*/}
+            {/*</Accordion>*/}
+            {/*<Accordion className={accordionCN()} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>*/}
+            {/*    <AccordionSummary className={accordionCN('AccordionSummary')} aria-controls="panel1d-content"*/}
+            {/*                      id="panel1d-header">*/}
+            {/*        <Typography>Часто задаваемые вопросы №6</Typography>*/}
+            {/*    </AccordionSummary>*/}
+            {/*    <AccordionDetails>*/}
+            {/*        <Typography>*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.*/}
+            {/*            Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый*/}
+            {/*            вопрос.Ответ на часто задаваемый вопрос.Ответ на часто задаваемый вопрос.Ответ на часто*/}
+            {/*            задаваемый вопрос.Ответ на часто задаваемый вопрос.*/}
+            {/*        </Typography>*/}
+            {/*    </AccordionDetails>*/}
+            {/*</Accordion>*/}
         </Box>
     );
 }

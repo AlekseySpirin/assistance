@@ -9,6 +9,12 @@
 
   }
 
+  &-Description {
+    &.MuiTypography-root {
+    font-size: clamp(15px, 2vw, 20px);
+    }
+  }
+
   &-Button {
 
     &.MuiButton-root {
