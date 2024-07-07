@@ -1,15 +1,20 @@
+@import "../../scss/common/variables";
 .FeedbackForm {
-  & .MuiPaper-root {
+  &.MuiPaper-root {
     &.MuiDialog-paper {
       border-radius: 10px;
 
     }
 
   }
+  &_display_size_s {
+    display: none;
+  }
 
   &-Button {
 
     &.MuiButton-root {
+      font-family: $default-font;
       margin-left: clamp(10px, 4vw, 30px);
       margin-right: clamp(10px, 4vw, 30px);
       background-color: #154B52;
@@ -17,14 +22,42 @@
     }
 
 
+
   }
 
   &-Button:hover {
     &.MuiButton-root {
       cursor: pointer;
-      opacity: 0.7;
+      opacity: 0.5;
       background-color: #154B52;
     }
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .FeedbackForm {
+
+    &-Button {
+      &.MuiButton-root {
+        max-width: 150px;
+        height: 40px;
+        font-size: 11px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .FeedbackForm {
+    &-Button {
+      &.MuiButton-root {
+        display: none;
+      }
+    }
+
 
   }
 }

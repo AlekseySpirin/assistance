@@ -12,6 +12,7 @@ import './Footer.scss'
 import TelegramIcon from '../TelegramIcon/TelegramIcon'
 import WhatsAppIcon from "../WhatsAppIcon/WhatsAppIcon";
 import Logo from "../Logo/Logo";
+import PhoneNumber from "../PhoneNumber/PhoneNumber";
 
 
 const footerCN = cn('Footer');
@@ -34,23 +35,28 @@ const Footer = () => {
                         }}>
                             <Logo width={'50px'} height={'50px'}/>
                             <Typography className={footerCN('Title')}
-                                        component="h1"
+                                        component="h2"
                                         fontSize={'clamp(15px, 2vw, 20px)'}
                                 // sx={{fontSize: '30px'}}
                             >
                                 UliEffectPlus
                             </Typography>
                         </Stack>
+                        {/*<Typography fontFamily={`"Wix Madefor Display", serif`} variant="body1" color="inherit">*/}
+                        {/*    /!*<span style={{fontWeight: 'bold'}}>Телефон:</span> <span>+7(918)2921781</span>*!/*/}
+                        {/*    <PhoneNumber/>*/}
+                        {/*</Typography>*/}
                         <Typography fontFamily={`"Wix Madefor Display", serif`} variant="body1" color="inherit">
-                            <span style={{fontWeight: 'bold'}}>Телефон:</span> <span>+7(918)2921781</span>
+                            <span style={{fontWeight: 'bold'}}>Телефон: </span><PhoneNumber/>
+
                         </Typography>
                         <Typography fontFamily={`"Wix Madefor Display", serif`} variant="body1" color="inherit">
                             <span style={{fontWeight: 'bold'}}>Электронная почта: </span>
                             <span>team-optimization@ya.ru</span>
                         </Typography>
-                        {/*<Typography variant="body1" color="inherit">*/}
-                        {/*	<span style={{ fontWeight: 'bold' }}>Адрес:</span> Россия, Республика Крым, пгт. Черноморское, Адрес*/}
-                        {/*</Typography>*/}
+                        <Typography variant="body1" color="inherit">
+                        	<span style={{ fontWeight: 'bold' }}>Место оказания услуг:</span> Краснодар и Краснодарский край
+                        </Typography>
                     </Grid>
                     <Stack sx={{
                         justifyContent: 'center',

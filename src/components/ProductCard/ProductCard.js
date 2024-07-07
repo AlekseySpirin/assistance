@@ -7,7 +7,7 @@ const ProductCard = ({title, children, price, xs, sm, md}) => {
 
     const cardCN = cn('ProductCard');
     return (
-        <Grid className={cardCN('Wrapper')} item sx xs={xs} sm={sm} md={md}>
+        <Grid className={cardCN('Wrapper')} item xs={xs} sm={sm} md={md}>
             <Card className={cardCN()}>
                 {/*<CardActionArea>*/}
                 <CardContent>
@@ -18,7 +18,7 @@ const ProductCard = ({title, children, price, xs, sm, md}) => {
                         {title}
                     </Typography>
                     <Typography className={cardCN('Description')}
-                                component={'p'}
+                                component={'div'}
                     >
                         {children}
                     </Typography>
