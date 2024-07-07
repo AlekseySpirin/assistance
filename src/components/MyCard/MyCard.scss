@@ -1,3 +1,4 @@
+@import "../../scss/common/variables";
 .Card {
   &.MuiCard-root {
 
@@ -14,12 +15,29 @@
     &.MuiGrid-item {
       display: grid;
       justify-content: center;
+      //align-items: center;
+      //align-content: center;
     }
   }
   &-Title {
     &.MuiTypography-root {
-      font-size: 20px;
+      font-family: $default-font;
+      font-size: 18px;
       font-weight: 700;
+      //width: 100%;
+      //height: 100%;
+      text-align: center;
+      //justify-content: center;
+      //justify-items: center;
+      //align-items: center;
+      //align-content: center;
+    }
+
+  }
+  &-Description {
+    &.MuiTypography-root {
+      font-family: $default-font;
+      text-align: justify;
     }
   }
 

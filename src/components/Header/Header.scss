@@ -1,3 +1,4 @@
+@import "../../scss/common/variables";
 .Toolbar {
   max-width: 1200px;
 
@@ -11,13 +12,16 @@
 
   &-Description {
     &.MuiTypography-root {
-    font-size: clamp(15px, 2vw, 20px);
+      font-size: clamp(15px, 2vw, 20px);
+      font-family: $default-font
+
     }
   }
 
   &-Button {
 
     &.MuiButton-root {
+      font-family: $default-font;
       margin-left: clamp(10px, 4vw, 30px);
       margin-right: clamp(10px, 4vw, 30px);
       background-color: #154B52;
@@ -38,7 +42,7 @@
 
   &-Info {
     margin: 20px 20px 0 20px;
-    width: 100%;
+    max-width: 1500px;
     justify-content: space-around;
     position: relative;
 
@@ -69,7 +73,7 @@
       padding-left: 20px;
       font-style: italic;
       max-width: 310px;
-      font-family: cursive;
+      font-family: $default-font, cursive;
       //font-size: 48px;
       font-size: clamp(25px, 3vw, 45px);
       display: flex;
@@ -85,9 +89,10 @@
       padding-right: clamp(20px, 2vw, 30px);
       font-style: italic;
       max-width: 200px;
-      min-width: 200px;
+      //min-width: 200px;
 
-      font-size: clamp(18px, 2vw, 26px);
+      font-size: clamp(22px, 2vw, 30px);
+      font-family: $default-font;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -101,9 +106,11 @@
 
   &-Item {
     border-radius: 10px;
+
     transition: opacity ease .2s, background-color ease .2s;
 
     &.MuiTypography-root {
+      font-family: $default-font;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -144,5 +151,48 @@
     &.MuiToolbar-root {
       width: 100%;
     }
+
+    &-Button {
+      &.MuiButton-root {
+        max-width: 150px;
+        height: 40px;
+        font-size: 11px;
+        margin: 0;
+      }
+    }
+
+    &-Subtitle {
+      &.MuiTypography-root {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        font-size: 18px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .Toolbar {
+    &-Button {
+      &.MuiButton-root {
+        display: none;
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 475px) {
+  .Toolbar {
+    &-Subtitle {
+      &.MuiTypography-root {
+        display: none;
+
+      }
+    }
+
   }
 }

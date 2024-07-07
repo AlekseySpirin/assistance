@@ -13,6 +13,10 @@ import KingBedIcon from '@mui/icons-material/KingBed';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import {cn} from "@bem-react/classname";
 import './Header.scss';
 import Logo from '../Logo/Logo';
@@ -26,6 +30,7 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 // import {useNavigate} from "react-router-dom";
 import WhatsAppIcon from "../WhatsAppIcon/WhatsAppIcon";
 import TelegramIcon from "../TelegramIcon/TelegramIcon";
+import FeedbackForm from "../FeedbackForm/FeedbackForm";
 
 const Header = () => {
     // const navigate = useNavigate();
@@ -66,22 +71,22 @@ const Header = () => {
     const sections = [
         {
             label: 'Преимущества',
-            // icon: <HomeIcon/>,
+            icon: <ThumbUpIcon/>,
             onClick: handleClickScrollToPrivilege,
         },
         {
             label: 'Продукты',
-            // icon: <KingBedIcon/>,
+            icon: <ShoppingBagIcon/>,
             onClick: handleClickScrollToProducts,
         },
         {
             label: 'Результаты трансформации',
-            // icon: <CollectionsIcon/>,
+            icon: <QueryStatsIcon/>,
             onClick: handleClickScrollToTransformResults,
         },
         {
             label: 'Полезный факт',
-            // icon: <ContactPageIcon/>,
+            icon: <EmojiObjectsIcon/>,
             onClick: handleClickScrollToUsefulFact,
         },
     ];
@@ -111,13 +116,13 @@ const Header = () => {
                         alignItems: 'center',
                         maxWidth: '550px',
                         flexDirection: 'row',
-                        padding: '0 50px'
+                        padding: '0 20px'
 
                     }}>
                         <Typography className={toolbar('Description')}
                                     component="h4"
                         >
-                            Трансформируем бизнес-процессы, повышаем производительность и сокращаем издержки в бизнесе
+                            Повышаем эффективность бизнеса за счет корректировки бизнес-процессов
                         </Typography>
                     </Stack>
 
@@ -127,21 +132,25 @@ const Header = () => {
                                     component="h2"
                                     flexDirection={"column"}
                         >
-                            <span>Консультация:</span>
+
                             <span style={{display: 'block'}}>+7(918)2921781</span>
                         </Typography>
                         <Link target={'_blank'} href="https://wa.me/79182921781"
                               color="inherit">
-                            <IconButton color="inherit">
-                                <WhatsAppIcon height={'40px'} width={'40px'}/>
-                            </IconButton>
+                            <Button style={{flexDirection: 'column'}} className={toolbar('Button')} variant="contained">Заказать
+                                оптимизацию <span>у нас</span> </Button>
+
+                            {/*<IconButton color="inherit">*/}
+                            {/*    <WhatsAppIcon height={'40px'} width={'40px'}/>*/}
+                            {/*</IconButton>*/}
                         </Link>
-                        <Link target={'_blank'} href="https://t.me/UliEffect"
-                              color="inherit">
-                            <IconButton color="inherit">
-                                <TelegramIcon height={'40px'} width={'40px'}/>
-                            </IconButton>
-                        </Link>
+                        {/*<Link target={'_blank'} href="https://t.me/UliEffect"*/}
+                        {/*      color="inherit">*/}
+                        {/*    <IconButton color="inherit">*/}
+                        {/*        <TelegramIcon height={'40px'} width={'40px'}/>*/}
+                        {/*    </IconButton>*/}
+                        {/*</Link>*/}
+                        {/*<FeedbackForm/>*/}
                         {/*<Button className={toolbar('Button')} variant="contained">Заказать звонок</Button>*/}
                     </Stack>
 
@@ -173,6 +182,35 @@ const Header = () => {
                             >
                                 UliEffectPlus
                             </Typography>
+
+                        </Stack>
+                        <Stack flexDirection={'row'} alignItems={'center'} justifyContent={'space-between'}
+                               maxWidth={'800px'}>
+                            <Typography className={toolbar('Subtitle')}
+                                        component="h2"
+                                        flexDirection={"column"}
+                            >
+
+                                <span style={{display: 'block'}}>+7(918)2921781</span>
+                            </Typography>
+                            <Link target={'_blank'} href="https://wa.me/79182921781"
+                                  color="inherit">
+                                <Button style={{flexDirection: 'column'}} className={toolbar('Button')}
+                                        variant="contained">Заказать
+                                    оптимизацию </Button>
+
+                                {/*<IconButton color="inherit">*/}
+                                {/*    <WhatsAppIcon height={'40px'} width={'40px'}/>*/}
+                                {/*</IconButton>*/}
+                            </Link>
+                            {/*<Link target={'_blank'} href="https://t.me/UliEffect"*/}
+                            {/*      color="inherit">*/}
+                            {/*    <IconButton color="inherit">*/}
+                            {/*        <TelegramIcon height={'40px'} width={'40px'}/>*/}
+                            {/*    </IconButton>*/}
+                            {/*</Link>*/}
+                            {/*<FeedbackForm/>*/}
+                            {/*<Button className={toolbar('Button')} variant="contained">Заказать звонок</Button>*/}
                         </Stack>
                     </Stack>
                 </Toolbar>

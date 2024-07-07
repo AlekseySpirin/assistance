@@ -36,18 +36,17 @@ const Footer = () => {
                             <Typography className={footerCN('Title')}
                                         component="h1"
                                         fontSize={'clamp(15px, 2vw, 20px)'}
-                                        // sx={{fontSize: '30px'}}
+                                // sx={{fontSize: '30px'}}
                             >
                                 UliEffectPlus
                             </Typography>
                         </Stack>
-                        <Typography variant="body1" color="inherit">
-                            <span style={{fontWeight: 'bold'}}>Телефон:</span> <span
-                            style={{display: 'block'}}>+7(918)2921781</span>
+                        <Typography fontFamily={`"Wix Madefor Display", serif`} variant="body1" color="inherit">
+                            <span style={{fontWeight: 'bold'}}>Телефон:</span> <span>+7(918)2921781</span>
                         </Typography>
-                        <Typography variant="body1" color="inherit">
-                            <span style={{fontWeight: 'bold'}}>Электронная почта:</span> <span
-                            style={{display: 'block'}}>team-optimization@ya.ru</span>
+                        <Typography fontFamily={`"Wix Madefor Display", serif`} variant="body1" color="inherit">
+                            <span style={{fontWeight: 'bold'}}>Электронная почта: </span>
+                            <span>team-optimization@ya.ru</span>
                         </Typography>
                         {/*<Typography variant="body1" color="inherit">*/}
                         {/*	<span style={{ fontWeight: 'bold' }}>Адрес:</span> Россия, Республика Крым, пгт. Черноморское, Адрес*/}
@@ -65,10 +64,13 @@ const Footer = () => {
                         <Typography className={footerCN('Description')} fontSize={'clamp(15px, 2vw, 20px)'}
                                     component="h5"
                         >
-                            Трансформируем бизнес-процессы, повышаем производительность и сокращаем издержки в бизнесе
+                            Повышаем эффективность бизнеса за счет корректировки бизнес-процессов
                         </Typography>
                     </Stack>
-                    <Grid item>
+                    <Grid sx={{
+                        display: 'flex',
+                        flexDirection: 'column'
+                    }} item>
                         <Link target={'_blank'} href="https://wa.me/79182921781" color="inherit">
                             <IconButton color="inherit">
                                 <WhatsAppIcon height={'40px'} width={'40px'}/>

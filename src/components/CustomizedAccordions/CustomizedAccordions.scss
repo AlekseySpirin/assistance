@@ -1,9 +1,13 @@
+@import "../../scss/common/variables";
 .Accordion {
   border-radius: 15px;
 
   &.MuiAccordion-root {
     background: #1C8394;
     color: #FFFFFF;
+  }
+  & .MuiTypography-root {
+    font-family: $default-font;
   }
   &-AccordionSummary {
     & .MuiSvgIcon-root {

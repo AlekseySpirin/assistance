@@ -1,0 +1,30 @@
+.FeedbackForm {
+  & .MuiPaper-root {
+    &.MuiDialog-paper {
+      border-radius: 10px;
+
+    }
+
+  }
+
+  &-Button {
+
+    &.MuiButton-root {
+      margin-left: clamp(10px, 4vw, 30px);
+      margin-right: clamp(10px, 4vw, 30px);
+      background-color: #154B52;
+      transition: opacity ease .2s, background-color ease .2s;
+    }
+
+
+  }
+
+  &-Button:hover {
+    &.MuiButton-root {
+      cursor: pointer;
+      opacity: 0.7;
+      background-color: #154B52;
+    }
+
+  }
+}

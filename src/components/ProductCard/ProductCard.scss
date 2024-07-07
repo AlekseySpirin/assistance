@@ -1,3 +1,4 @@
+@import "../../scss/common/variables";
 .ProductCard {
   height: 100%;
   &.MuiCard-root {
@@ -26,17 +27,23 @@
   &-Title {
     &.MuiTypography-root {
       font-size: 20px;
+      font-family: $default-font;
       font-weight: 700;
+      text-align: center;
     }
   }
 
   &-Description {
-
+     &.MuiTypography-root {
+      text-align: justify;
+       font-family: $default-font;
+    }
   }
 
   &-Price {
     &.MuiTypography-root {
       font-size: 20px;
+      font-family: $default-font;
       font-weight: 700;
       margin-top: auto;
     }

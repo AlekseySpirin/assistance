@@ -10,7 +10,15 @@ const MyCard = ({title, children, xs, sm, md}) => {
         <Grid className={cardCN('Wrapper')} item sx xs={xs} sm={sm} md={md}>
             <Card className={cardCN()}>
                 {/*<CardActionArea>*/}
-                <CardContent>
+                <CardContent
+                    sx={{
+                        height: '80%',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        alignContent: 'center'
+
+                    }}
+                >
                     <Typography className={cardCN('Title')}
                                 gutterBottom
                                 variant="h5"
